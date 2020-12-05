@@ -46,7 +46,7 @@ if(ingreso==1){
  document.getElementById("muestra").value=(ingreso_2*0.10)+ingreso_2;
 }else if(ingreso==3){
     document.getElementById("muestra_2").value=ingreso_2;
-    document.getElementById("muestra").value=(ingreso_2*0.10)+ingreso_2;
+    document.getElementById("muestra").value=(ingreso_2*0.05)+ingreso_2;
 }else{
     document.getElementById("muestra").value="solo existen tres categorias de productos";
 }
