@@ -14,6 +14,34 @@
     <label for=""></label>
     <input type="submit" id="ingresar" value="ingresar" onclick=tipoMotor() >
 </div>
+ <BR></BR>
+
+ <BR></BR>
+
+
+ <BR></BR>
+<div id=impuestos>
+
+    <label for="producto">Ingrese el tipo de producto:</label>
+    <input type="number" name="producto" id="producto">
+    <br>
+    <label for="motor">Ingrese el precio del producto:</label>
+    <input type="text" name="precio" id="precio" placeholder="PRECIO SIN IVA">
+   <br>
+
+   <label for="visor">El valor de su producto sin iva es</label>
+    <input type="text" name="muestra_2" id="muestra_2" placeholder="Su Valor es">
+     <br>
+    <label for="visor">El valor de su producto con iva es</label>
+    <input type="text" name="muestra" id="muestra" placeholder="Su Valor es">
+     
+
+    <input type="submit" id="ingresar" value="calcular" onclick=obtenerValorConImpuestos() >
+
+
+</div>
+
+
 <script src="./index.js"></script>
 </body>
 </html>

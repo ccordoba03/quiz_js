@@ -1,4 +1,6 @@
 
+// punto numero1
+
 function tipoMotor(){
 
 let numero_motor=document.getElementById("motor").value;
@@ -23,3 +25,30 @@ if(numero==0){
 
     document.write ("no existe un valor valido para el tipo de bomba");
 }};
+
+
+//punto numero_2
+
+
+function obtenerValorConImpuestos(){
+
+let valorSin=document.getElementById("precio").value;
+let tipoP=document.getElementById("producto").value;
+let ingreso=parseInt(tipoP);
+let ingreso_2=parseFloat(valorSin);
+
+
+if(ingreso==1){
+    document.getElementById("muestra_2").value=ingreso_2;
+    document.getElementById("muestra").value=(ingreso_2*0.21)+ingreso_2;
+} else if(ingreso==2){
+    document.getElementById("muestra_2").value=ingreso_2;
+ document.getElementById("muestra").value=(ingreso_2*0.10)+ingreso_2;
+}else if(ingreso==3){
+    document.getElementById("muestra_2").value=ingreso_2;
+    document.getElementById("muestra").value=(ingreso_2*0.10)+ingreso_2;
+}else{
+    document.getElementById("muestra").value="solo existen tres categorias de productos";
+}
+
+}
